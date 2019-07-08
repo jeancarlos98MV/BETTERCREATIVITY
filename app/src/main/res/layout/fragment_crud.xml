@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3B3B98"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Clases"
+            android:background="@drawable/custom_button"
+            android:width="200dp"
+            android:height="55dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="95dp"
+            android:id="@+id/irClases"
+            android:onClick="irverClases"/>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:rowCount="2"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- Columna 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnNuevaClase"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/create"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:text="Crear"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Columna 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnEditarClase"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/update"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Columna 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnLeerClase"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/read"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:text="Leer"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Columna 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnEliminarClase"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/delete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:text="Borrar"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+</LinearLayout>

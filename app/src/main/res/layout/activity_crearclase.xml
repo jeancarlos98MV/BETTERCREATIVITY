@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#25CCF7"
+    tools:context=".Presentador.crearclase">
+    
+    <LinearLayout
+        android:id="@+id/creaClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_margin="10dp"
+            android:foreground="?android:attr/selectableItemBackground">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+                
+                <Button
+                    android:id="@+id/btnSubirpdf"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar Archivo"
+                    android:layout_marginBottom="29dp"
+                    android:background="@drawable/custom_button"
+                    android:onClick="FileUpload"
+                    />
+
+                <EditText
+                    android:layout_marginBottom="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtID"
+                    android:hint="ID"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtNombre"
+                    android:hint="Nombre de la clase"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSalon"
+                    android:layout_marginTop="10dp"
+                    android:hint="Salon de la clase"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Hora de clases"
+                    android:id="@+id/txtHoraclase"
+                    />
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="41dp"
+                    android:background="@drawable/custom_button"
+                    android:text="Crear"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnCrear"/>
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="CANCELAR"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnCancelar"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
